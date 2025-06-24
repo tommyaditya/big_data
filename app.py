@@ -7,6 +7,9 @@ from sklearn.model_selection import train_test_split
 st.set_page_config(page_title="Prediksi Harga Laptop", layout="centered")
 st.title("💻 Prediksi Kategori Harga Laptop")
 
+# tampilkan kolom untuk verifikasi
+st.write("📋 Kolom dataset:", df.columns.tolist())
+
 # Load data
 @st.cache_data
 def load_data():
